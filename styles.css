@@ -1,0 +1,21 @@
+h2 {
+	font-weight:bolder;
+}
+h1 {
+    color: gray;
+}
+p {
+    font-weight:bolder;
+    font-size: 20px;
+}
+#table thead {
+    background: rgb(91, 179, 56);
+}
+#mainDiv {
+    background-color: rgb(228, 255, 131);
+    width : 1300px;
+    height : 475px;
+    margin: 20pt;
+    border-radius : 10px;
+	opacity: 0.9;
+}

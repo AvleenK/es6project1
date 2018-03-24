@@ -46,7 +46,7 @@ $(document).on('click','#editBtn',()=> {
 	const pttrn3 = /[a-z A-Z]+/;
 
 	if (name == "" || !pttrn1.test(name)) {
-		window.alert("Enter correct Name");
+		window.alert("Enter correct Name (firstname lastname)");
 	}
 	else if (stream == "" || stream.length > 4 || !pttrn3.test(stream)) {
 		window.alert("ENTER STREAM IN CORRECT FORMAT");
@@ -131,7 +131,7 @@ $(document).on('click','#submitBtn',()=> {
 		window.alert("Enter correct 10 digit roll Number");
 	}
 	else if (name == "" || !pttrn1.test(name)) {
-		window.alert("Enter correct Name");
+		window.alert("Enter correct Name (firstname lastname)");
 	}
 	else if (stream == "" || stream.length > 5 || !pttrn3.test(stream)) {
 		window.alert("ENTER STREAM IN CORRECT FORMAT");

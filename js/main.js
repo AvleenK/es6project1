@@ -41,7 +41,7 @@ $(document).on('click','#editBtn',()=> {
 	let name = document.getElementById(`name`).value;
 	let stream = document.getElementById(`stream`).value;
 	let year = document.getElementById(`passYear`).value;
-	const pttrn1 = /[a-z A-Z]+/;
+	const pttrn1 = /[a-z A-Z]+\s[a-z A-Z]+/;
     const pttrn2 = /[0-9]+/;
 	const pttrn3 = /[a-z A-Z]+/;
 
@@ -124,7 +124,7 @@ $(document).on('click','#submitBtn',()=> {
 	let stream = document.getElementById(`stream`).value;
 	let rollno = document.getElementById(`roll`).value;
 	let year = document.getElementById(`passYear`).value;
-	const pttrn1 = /[a-z A-Z]+/;
+	const pttrn1 = /[a-z A-Z]+\s[a-z A-Z]+/;
     const pttrn2 = /[0-9]+/;
 	const pttrn3 = /[a-z A-Z]+/;
 	if (rollno == "" || rollno.length != 10 || !pttrn2.test(rollno)) {

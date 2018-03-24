@@ -41,12 +41,12 @@ $(document).on('click','#editBtn',()=> {
 	let name = document.getElementById(`name`).value;
 	let stream = document.getElementById(`stream`).value;
 	let year = document.getElementById(`passYear`).value;
-	const pttrn1 = /[a-z A-Z]+\s[a-z A-Z]+/;
+	const pttrn1 = /[a-z A-Z]+/;
     const pttrn2 = /[0-9]+/;
 	const pttrn3 = /[a-z A-Z]+/;
 
 	if (name == "" || !pttrn1.test(name)) {
-		window.alert("Enter correct Name (firstname lastname)");
+		window.alert("Enter correct Name");
 	}
 	else if (stream == "" || stream.length > 4 || !pttrn3.test(stream)) {
 		window.alert("ENTER STREAM IN CORRECT FORMAT");
@@ -124,14 +124,14 @@ $(document).on('click','#submitBtn',()=> {
 	let stream = document.getElementById(`stream`).value;
 	let rollno = document.getElementById(`roll`).value;
 	let year = document.getElementById(`passYear`).value;
-	const pttrn1 = /[a-z A-Z]+\s[a-z A-Z]+/;
+	const pttrn1 = /[a-z A-Z]+/;
     const pttrn2 = /[0-9]+/;
 	const pttrn3 = /[a-z A-Z]+/;
 	if (rollno == "" || rollno.length != 10 || !pttrn2.test(rollno)) {
 		window.alert("Enter correct 10 digit roll Number");
 	}
 	else if (name == "" || !pttrn1.test(name)) {
-		window.alert("Enter correct Name (firstname lastname)");
+		window.alert("Enter correct Name");
 	}
 	else if (stream == "" || stream.length > 5 || !pttrn3.test(stream)) {
 		window.alert("ENTER STREAM IN CORRECT FORMAT");
